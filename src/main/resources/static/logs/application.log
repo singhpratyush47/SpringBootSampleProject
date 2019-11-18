@@ -1,0 +1,1104 @@
+[ INFO] 2019-11-16 11:18:24,751 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarting:55] 
+Starting ContentManagementApplication on ibi086 with PID 2616 (E:\content-management-workspace\ContentManagement\target\classes started by maheshk in E:\content-management-workspace\ContentManagement)
+
+[ INFO] 2019-11-16 11:18:24,814 [com.sutisoft.contentmanagement.ContentManagementApplication :logStartupProfileInfo:651] 
+No active profile set, falling back to default profiles: default
+
+[ INFO] 2019-11-16 11:18:25,188 [org.springframework.boot.devtools.restart.ChangeableUrls :logTo:225] 
+The Class-Path manifest attribute in C:\Users\maheshk\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+
+[ INFO] 2019-11-16 11:18:25,188 [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor :logTo:225] 
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+
+[ INFO] 2019-11-16 11:18:25,188 [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor :logTo:225] 
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+
+[ INFO] 2019-11-16 11:18:27,577 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:126] 
+Bootstrapping Spring Data repositories in DEFAULT mode.
+
+[ INFO] 2019-11-16 11:18:27,875 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:182] 
+Finished Spring Data repository scanning in 257ms. Found 5 repository interfaces.
+
+[ INFO] 2019-11-16 11:18:29,077 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$41a1c3a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ INFO] 2019-11-16 11:18:29,234 [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping :afterPropertiesSet:236] 
+Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+
+[ INFO] 2019-11-16 11:18:29,281 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ INFO] 2019-11-16 11:18:30,217 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :initialize:92] 
+Tomcat initialized with port(s): 8080 (http)
+
+[ INFO] 2019-11-16 11:18:30,218 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Initializing ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 11:18:30,218 [org.apache.catalina.core.StandardService :log:173] 
+Starting service [Tomcat]
+
+[ INFO] 2019-11-16 11:18:30,218 [org.apache.catalina.core.StandardEngine :log:173] 
+Starting Servlet engine: [Apache Tomcat/9.0.27]
+
+[ INFO] 2019-11-16 11:18:30,549 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :log:173] 
+Initializing Spring embedded WebApplicationContext
+
+[ INFO] 2019-11-16 11:18:30,549 [org.springframework.web.context.ContextLoader :prepareWebApplicationContext:284] 
+Root WebApplicationContext: initialization completed in 5361 ms
+
+[ INFO] 2019-11-16 11:18:31,126 [org.hibernate.jpa.internal.util.LogHelper :logPersistenceUnitInformation:31] 
+HHH000204: Processing PersistenceUnitInfo [name: default]
+
+[ INFO] 2019-11-16 11:18:31,424 [org.hibernate.Version :logVersion:46] 
+HHH000412: Hibernate Core {5.4.6.Final}
+
+[ INFO] 2019-11-16 11:18:31,831 [org.hibernate.annotations.common.Version :<clinit>:49] 
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+
+[ INFO] 2019-11-16 11:18:32,127 [com.zaxxer.hikari.HikariDataSource :getConnection:110] 
+HikariPool-1 - Starting...
+
+[ INFO] 2019-11-16 11:18:32,502 [com.zaxxer.hikari.HikariDataSource :getConnection:123] 
+HikariPool-1 - Start completed.
+
+[ INFO] 2019-11-16 11:18:32,551 [org.hibernate.dialect.Dialect :<init>:172] 
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+
+[ INFO] 2019-11-16 11:18:35,083 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :initiateService:52] 
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+
+[ INFO] 2019-11-16 11:18:35,100 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :buildNativeEntityManagerFactory:416] 
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 11:18:35,147 [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer :startServer:57] 
+LiveReload server is running on port 35729
+
+[ WARN] 2019-11-16 11:18:36,943 [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :openEntityManagerInViewInterceptor:220] 
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+[ INFO] 2019-11-16 11:18:38,126 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Starting ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 11:18:38,314 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :start:204] 
+Tomcat started on port(s): 8080 (http) with context path ''
+
+[ INFO] 2019-11-16 11:18:38,314 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarted:61] 
+Started ContentManagementApplication in 15.507 seconds (JVM running for 18.791)
+
+[ INFO] 2019-11-16 11:21:28,027 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :log:173] 
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+[ INFO] 2019-11-16 11:21:28,028 [org.springframework.web.servlet.DispatcherServlet :initServletBean:525] 
+Initializing Servlet 'dispatcherServlet'
+
+[ INFO] 2019-11-16 11:21:28,048 [org.springframework.web.servlet.DispatcherServlet :initServletBean:547] 
+Completed initialization in 19 ms
+
+[ INFO] 2019-11-16 11:21:28,202 [com.sutisoft.contentmanagement.controller.IndexController :getContentList:31] 
+Start of-com.sutisoft.contentmanagement.controller.IndexController getContentList method
+
+[ INFO] 2019-11-16 11:21:45,878 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContentList:33] 
+Start of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContentList method
+
+[ INFO] 2019-11-16 11:23:51,875 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContentList:48] 
+End of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContentList method
+
+[ INFO] 2019-11-16 11:23:51,875 [com.sutisoft.contentmanagement.controller.IndexController :getContentList:40] 
+End of-com.sutisoft.contentmanagement.controller.IndexController getContentList method
+
+[ INFO] 2019-11-16 11:24:36,820 [com.sutisoft.contentmanagement.controller.IndexController :getContentList:31] 
+Start of-com.sutisoft.contentmanagement.controller.IndexController getContentList method
+
+[ INFO] 2019-11-16 11:24:40,222 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContentList:33] 
+Start of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContentList method
+
+[ INFO] 2019-11-16 11:25:01,031 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContentList:48] 
+End of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContentList method
+
+[ INFO] 2019-11-16 11:25:01,033 [com.sutisoft.contentmanagement.controller.IndexController :getContentList:40] 
+End of-com.sutisoft.contentmanagement.controller.IndexController getContentList method
+
+[ INFO] 2019-11-16 11:50:26,379 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :destroy:598] 
+Closing JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 11:50:26,380 [com.zaxxer.hikari.HikariDataSource :close:350] 
+HikariPool-1 - Shutdown initiated...
+
+[ INFO] 2019-11-16 11:50:26,411 [com.zaxxer.hikari.HikariDataSource :close:352] 
+HikariPool-1 - Shutdown completed.
+
+[ INFO] 2019-11-16 11:50:26,958 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarting:55] 
+Starting ContentManagementApplication on ibi086 with PID 2616 (E:\content-management-workspace\ContentManagement\target\classes started by maheshk in E:\content-management-workspace\ContentManagement)
+
+[ INFO] 2019-11-16 11:50:26,958 [com.sutisoft.contentmanagement.ContentManagementApplication :logStartupProfileInfo:651] 
+No active profile set, falling back to default profiles: default
+
+[ INFO] 2019-11-16 11:50:28,114 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:126] 
+Bootstrapping Spring Data repositories in DEFAULT mode.
+
+[ INFO] 2019-11-16 11:50:40,301 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarting:55] 
+Starting ContentManagementApplication on ibi086 with PID 5340 (E:\content-management-workspace\ContentManagement\target\classes started by maheshk in E:\content-management-workspace\ContentManagement)
+
+[ INFO] 2019-11-16 11:50:40,317 [com.sutisoft.contentmanagement.ContentManagementApplication :logStartupProfileInfo:651] 
+No active profile set, falling back to default profiles: default
+
+[ INFO] 2019-11-16 11:50:40,535 [org.springframework.boot.devtools.restart.ChangeableUrls :logTo:225] 
+The Class-Path manifest attribute in C:\Users\maheshk\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+
+[ INFO] 2019-11-16 11:50:40,535 [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor :logTo:225] 
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+
+[ INFO] 2019-11-16 11:50:40,535 [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor :logTo:225] 
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+
+[ INFO] 2019-11-16 11:50:42,815 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:126] 
+Bootstrapping Spring Data repositories in DEFAULT mode.
+
+[ INFO] 2019-11-16 11:50:43,112 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:182] 
+Finished Spring Data repository scanning in 270ms. Found 5 repository interfaces.
+
+[ INFO] 2019-11-16 11:50:44,314 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$b13e0626] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ INFO] 2019-11-16 11:50:44,513 [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping :afterPropertiesSet:236] 
+Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+
+[ INFO] 2019-11-16 11:50:44,560 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ INFO] 2019-11-16 11:50:45,423 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :initialize:92] 
+Tomcat initialized with port(s): 8080 (http)
+
+[ INFO] 2019-11-16 11:50:45,451 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Initializing ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 11:50:45,453 [org.apache.catalina.core.StandardService :log:173] 
+Starting service [Tomcat]
+
+[ INFO] 2019-11-16 11:50:45,454 [org.apache.catalina.core.StandardEngine :log:173] 
+Starting Servlet engine: [Apache Tomcat/9.0.27]
+
+[ INFO] 2019-11-16 11:50:45,926 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :log:173] 
+Initializing Spring embedded WebApplicationContext
+
+[ INFO] 2019-11-16 11:50:45,926 [org.springframework.web.context.ContextLoader :prepareWebApplicationContext:284] 
+Root WebApplicationContext: initialization completed in 5391 ms
+
+[ INFO] 2019-11-16 11:50:46,407 [org.hibernate.jpa.internal.util.LogHelper :logPersistenceUnitInformation:31] 
+HHH000204: Processing PersistenceUnitInfo [name: default]
+
+[ INFO] 2019-11-16 11:50:46,580 [org.hibernate.Version :logVersion:46] 
+HHH000412: Hibernate Core {5.4.6.Final}
+
+[ INFO] 2019-11-16 11:50:47,002 [org.hibernate.annotations.common.Version :<clinit>:49] 
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+
+[ INFO] 2019-11-16 11:50:47,283 [com.zaxxer.hikari.HikariDataSource :getConnection:110] 
+HikariPool-1 - Starting...
+
+[ INFO] 2019-11-16 11:50:47,767 [com.zaxxer.hikari.HikariDataSource :getConnection:123] 
+HikariPool-1 - Start completed.
+
+[ INFO] 2019-11-16 11:50:47,783 [org.hibernate.dialect.Dialect :<init>:172] 
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+
+[ INFO] 2019-11-16 11:50:49,832 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :initiateService:52] 
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+
+[ INFO] 2019-11-16 11:50:49,849 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :buildNativeEntityManagerFactory:416] 
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 11:50:49,895 [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer :startServer:57] 
+LiveReload server is running on port 35729
+
+[ WARN] 2019-11-16 11:50:51,565 [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :openEntityManagerInViewInterceptor:220] 
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+[ INFO] 2019-11-16 11:50:52,801 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Starting ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 11:50:52,896 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :start:204] 
+Tomcat started on port(s): 8080 (http) with context path ''
+
+[ INFO] 2019-11-16 11:50:52,911 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarted:61] 
+Started ContentManagementApplication in 13.694 seconds (JVM running for 15.925)
+
+[ INFO] 2019-11-16 11:50:57,037 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :log:173] 
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+[ INFO] 2019-11-16 11:50:57,052 [org.springframework.web.servlet.DispatcherServlet :initServletBean:525] 
+Initializing Servlet 'dispatcherServlet'
+
+[ INFO] 2019-11-16 11:50:57,053 [org.springframework.web.servlet.DispatcherServlet :initServletBean:547] 
+Completed initialization in 1 ms
+
+[ INFO] 2019-11-16 11:50:57,152 [com.sutisoft.contentmanagement.controller.IndexController :getContentList:33] 
+Start of-com.sutisoft.contentmanagement.controller.IndexController getContentList method
+
+[ INFO] 2019-11-16 11:51:02,221 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContentList:33] 
+Start of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContentList method
+
+[ INFO] 2019-11-16 11:51:03,452 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContentList:48] 
+End of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContentList method
+
+[ INFO] 2019-11-16 11:51:03,468 [com.sutisoft.contentmanagement.controller.IndexController :getContentList:44] 
+End of-com.sutisoft.contentmanagement.controller.IndexController getContentList method
+
+[ INFO] 2019-11-16 11:51:17,933 [com.sutisoft.contentmanagement.controller.IndexController :getContentList:33] 
+Start of-com.sutisoft.contentmanagement.controller.IndexController getContentList method
+
+[ INFO] 2019-11-16 11:51:21,440 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContentList:33] 
+Start of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContentList method
+
+[ INFO] 2019-11-16 11:51:21,751 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContentList:48] 
+End of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContentList method
+
+[ INFO] 2019-11-16 11:51:21,751 [com.sutisoft.contentmanagement.controller.IndexController :getContentList:44] 
+End of-com.sutisoft.contentmanagement.controller.IndexController getContentList method
+
+[ INFO] 2019-11-16 11:53:01,906 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :destroy:598] 
+Closing JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 11:53:01,907 [com.zaxxer.hikari.HikariDataSource :close:350] 
+HikariPool-1 - Shutdown initiated...
+
+[ INFO] 2019-11-16 11:53:02,001 [com.zaxxer.hikari.HikariDataSource :close:352] 
+HikariPool-1 - Shutdown completed.
+
+[ INFO] 2019-11-16 11:53:02,705 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarting:55] 
+Starting ContentManagementApplication on ibi086 with PID 5340 (E:\content-management-workspace\ContentManagement\target\classes started by maheshk in E:\content-management-workspace\ContentManagement)
+
+[ INFO] 2019-11-16 11:53:02,705 [com.sutisoft.contentmanagement.ContentManagementApplication :logStartupProfileInfo:651] 
+No active profile set, falling back to default profiles: default
+
+[ INFO] 2019-11-16 11:53:03,798 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:126] 
+Bootstrapping Spring Data repositories in DEFAULT mode.
+
+[ INFO] 2019-11-16 11:53:03,908 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:182] 
+Finished Spring Data repository scanning in 108ms. Found 5 repository interfaces.
+
+[ INFO] 2019-11-16 11:53:04,283 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$b13e0626] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ INFO] 2019-11-16 11:53:04,298 [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping :afterPropertiesSet:236] 
+Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+
+[ INFO] 2019-11-16 11:53:04,329 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ WARN] 2019-11-16 11:53:04,517 [org.apache.tomcat.util.modeler.Registry :log:173] 
+The MBean registry cannot be disabled because it has already been initialised
+
+[ INFO] 2019-11-16 11:53:04,813 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :initialize:92] 
+Tomcat initialized with port(s): 8080 (http)
+
+[ INFO] 2019-11-16 11:53:04,813 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Initializing ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 11:53:04,813 [org.apache.catalina.core.StandardService :log:173] 
+Starting service [Tomcat]
+
+[ INFO] 2019-11-16 11:53:04,813 [org.apache.catalina.core.StandardEngine :log:173] 
+Starting Servlet engine: [Apache Tomcat/9.0.27]
+
+[ INFO] 2019-11-16 11:53:05,032 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :log:173] 
+Initializing Spring embedded WebApplicationContext
+
+[ INFO] 2019-11-16 11:53:05,032 [org.springframework.web.context.ContextLoader :prepareWebApplicationContext:284] 
+Root WebApplicationContext: initialization completed in 2312 ms
+
+[ INFO] 2019-11-16 11:53:05,235 [org.hibernate.jpa.internal.util.LogHelper :logPersistenceUnitInformation:31] 
+HHH000204: Processing PersistenceUnitInfo [name: default]
+
+[ INFO] 2019-11-16 11:53:05,251 [com.zaxxer.hikari.HikariDataSource :getConnection:110] 
+HikariPool-2 - Starting...
+
+[ INFO] 2019-11-16 11:53:05,282 [com.zaxxer.hikari.HikariDataSource :getConnection:123] 
+HikariPool-2 - Start completed.
+
+[ INFO] 2019-11-16 11:53:05,282 [org.hibernate.dialect.Dialect :<init>:172] 
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+
+[ INFO] 2019-11-16 13:28:39,107 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarting:55] 
+Starting ContentManagementApplication on ibi086 with PID 3580 (E:\content-management-workspace\ContentManagement\target\classes started by maheshk in E:\content-management-workspace\ContentManagement)
+
+[ INFO] 2019-11-16 13:28:39,123 [com.sutisoft.contentmanagement.ContentManagementApplication :logStartupProfileInfo:651] 
+No active profile set, falling back to default profiles: default
+
+[ INFO] 2019-11-16 13:28:39,393 [org.springframework.boot.devtools.restart.ChangeableUrls :logTo:225] 
+The Class-Path manifest attribute in C:\Users\maheshk\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+
+[ INFO] 2019-11-16 13:28:39,393 [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor :logTo:225] 
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+
+[ INFO] 2019-11-16 13:28:39,393 [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor :logTo:225] 
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+
+[ INFO] 2019-11-16 13:28:41,485 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:126] 
+Bootstrapping Spring Data repositories in DEFAULT mode.
+
+[ INFO] 2019-11-16 13:28:41,767 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:182] 
+Finished Spring Data repository scanning in 258ms. Found 5 repository interfaces.
+
+[ INFO] 2019-11-16 13:28:42,877 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$75af5286] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ INFO] 2019-11-16 13:28:43,096 [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping :afterPropertiesSet:236] 
+Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+
+[ INFO] 2019-11-16 13:28:43,143 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ INFO] 2019-11-16 13:28:44,042 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :initialize:92] 
+Tomcat initialized with port(s): 8080 (http)
+
+[ INFO] 2019-11-16 13:28:44,090 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Initializing ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 13:28:44,090 [org.apache.catalina.core.StandardService :log:173] 
+Starting service [Tomcat]
+
+[ INFO] 2019-11-16 13:28:44,090 [org.apache.catalina.core.StandardEngine :log:173] 
+Starting Servlet engine: [Apache Tomcat/9.0.27]
+
+[ INFO] 2019-11-16 13:28:44,425 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :log:173] 
+Initializing Spring embedded WebApplicationContext
+
+[ INFO] 2019-11-16 13:28:44,425 [org.springframework.web.context.ContextLoader :prepareWebApplicationContext:284] 
+Root WebApplicationContext: initialization completed in 5032 ms
+
+[ INFO] 2019-11-16 13:28:44,893 [org.hibernate.jpa.internal.util.LogHelper :logPersistenceUnitInformation:31] 
+HHH000204: Processing PersistenceUnitInfo [name: default]
+
+[ INFO] 2019-11-16 13:28:45,095 [org.hibernate.Version :logVersion:46] 
+HHH000412: Hibernate Core {5.4.6.Final}
+
+[ INFO] 2019-11-16 13:28:45,473 [org.hibernate.annotations.common.Version :<clinit>:49] 
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+
+[ INFO] 2019-11-16 13:28:45,738 [com.zaxxer.hikari.HikariDataSource :getConnection:110] 
+HikariPool-1 - Starting...
+
+[ INFO] 2019-11-16 13:28:46,097 [com.zaxxer.hikari.HikariDataSource :getConnection:123] 
+HikariPool-1 - Start completed.
+
+[ INFO] 2019-11-16 13:28:46,113 [org.hibernate.dialect.Dialect :<init>:172] 
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+
+[ INFO] 2019-11-16 13:28:48,299 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :initiateService:52] 
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+
+[ INFO] 2019-11-16 13:28:48,300 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :buildNativeEntityManagerFactory:416] 
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 13:28:48,348 [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer :startServer:57] 
+LiveReload server is running on port 35729
+
+[ WARN] 2019-11-16 13:28:49,925 [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :openEntityManagerInViewInterceptor:220] 
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+[ INFO] 2019-11-16 13:28:51,003 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Starting ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 13:28:51,082 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :start:204] 
+Tomcat started on port(s): 8080 (http) with context path ''
+
+[ INFO] 2019-11-16 13:28:51,098 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarted:61] 
+Started ContentManagementApplication in 13.129 seconds (JVM running for 15.227)
+
+[ INFO] 2019-11-16 13:31:55,202 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :log:173] 
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+[ INFO] 2019-11-16 13:31:55,202 [org.springframework.web.servlet.DispatcherServlet :initServletBean:525] 
+Initializing Servlet 'dispatcherServlet'
+
+[ INFO] 2019-11-16 13:31:55,203 [org.springframework.web.servlet.DispatcherServlet :initServletBean:547] 
+Completed initialization in 1 ms
+
+[ INFO] 2019-11-16 13:32:04,185 [com.sutisoft.contentmanagement.controller.IndexController :getContent:53] 
+Start of-com.sutisoft.contentmanagement.controller.IndexController getContent method
+
+[ INFO] 2019-11-16 13:32:20,018 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContent:57] 
+Start of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContent method
+
+[ INFO] 2019-11-16 13:32:58,373 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContent:70] 
+End of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContent method
+
+[ INFO] 2019-11-16 13:32:59,748 [com.sutisoft.contentmanagement.controller.IndexController :getContent:63] 
+End of-com.sutisoft.contentmanagement.controller.IndexController getContent method
+
+[ INFO] 2019-11-16 13:35:29,251 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :destroy:598] 
+Closing JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 13:35:29,299 [com.zaxxer.hikari.HikariDataSource :close:350] 
+HikariPool-1 - Shutdown initiated...
+
+[ INFO] 2019-11-16 13:35:29,330 [com.zaxxer.hikari.HikariDataSource :close:352] 
+HikariPool-1 - Shutdown completed.
+
+[ INFO] 2019-11-16 13:35:29,848 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarting:55] 
+Starting ContentManagementApplication on ibi086 with PID 3580 (E:\content-management-workspace\ContentManagement\target\classes started by maheshk in E:\content-management-workspace\ContentManagement)
+
+[ INFO] 2019-11-16 13:35:29,848 [com.sutisoft.contentmanagement.ContentManagementApplication :logStartupProfileInfo:651] 
+No active profile set, falling back to default profiles: default
+
+[ INFO] 2019-11-16 13:35:30,924 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:126] 
+Bootstrapping Spring Data repositories in DEFAULT mode.
+
+[ INFO] 2019-11-16 13:35:31,019 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:182] 
+Finished Spring Data repository scanning in 111ms. Found 5 repository interfaces.
+
+[ INFO] 2019-11-16 13:35:31,362 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$75af5286] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ INFO] 2019-11-16 13:35:31,425 [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping :afterPropertiesSet:236] 
+Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+
+[ INFO] 2019-11-16 13:35:31,440 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ WARN] 2019-11-16 13:35:31,659 [org.apache.tomcat.util.modeler.Registry :log:173] 
+The MBean registry cannot be disabled because it has already been initialised
+
+[ INFO] 2019-11-16 13:35:31,928 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :initialize:92] 
+Tomcat initialized with port(s): 8080 (http)
+
+[ INFO] 2019-11-16 13:35:31,928 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Initializing ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 13:35:31,928 [org.apache.catalina.core.StandardService :log:173] 
+Starting service [Tomcat]
+
+[ INFO] 2019-11-16 13:35:31,928 [org.apache.catalina.core.StandardEngine :log:173] 
+Starting Servlet engine: [Apache Tomcat/9.0.27]
+
+[ INFO] 2019-11-16 13:35:32,054 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :log:173] 
+Initializing Spring embedded WebApplicationContext
+
+[ INFO] 2019-11-16 13:35:32,054 [org.springframework.web.context.ContextLoader :prepareWebApplicationContext:284] 
+Root WebApplicationContext: initialization completed in 2190 ms
+
+[ INFO] 2019-11-16 13:35:32,298 [org.hibernate.jpa.internal.util.LogHelper :logPersistenceUnitInformation:31] 
+HHH000204: Processing PersistenceUnitInfo [name: default]
+
+[ INFO] 2019-11-16 13:35:32,313 [com.zaxxer.hikari.HikariDataSource :getConnection:110] 
+HikariPool-2 - Starting...
+
+[ INFO] 2019-11-16 13:35:32,329 [com.zaxxer.hikari.HikariDataSource :getConnection:123] 
+HikariPool-2 - Start completed.
+
+[ INFO] 2019-11-16 13:35:32,329 [org.hibernate.dialect.Dialect :<init>:172] 
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+
+[ INFO] 2019-11-16 13:35:32,789 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :initiateService:52] 
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+
+[ INFO] 2019-11-16 13:35:32,789 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :buildNativeEntityManagerFactory:416] 
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 13:35:32,805 [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer :startServer:57] 
+LiveReload server is running on port 35729
+
+[ WARN] 2019-11-16 13:35:33,424 [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :openEntityManagerInViewInterceptor:220] 
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+[ INFO] 2019-11-16 13:35:33,938 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Starting ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 13:35:33,969 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :start:204] 
+Tomcat started on port(s): 8080 (http) with context path ''
+
+[ INFO] 2019-11-16 13:35:33,969 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarted:61] 
+Started ContentManagementApplication in 4.25 seconds (JVM running for 418.09)
+
+[ INFO] 2019-11-16 13:35:33,985 [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener :onApplicationEvent:63] 
+Condition evaluation unchanged
+
+[ INFO] 2019-11-16 13:36:50,378 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :destroy:598] 
+Closing JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 13:36:50,378 [com.zaxxer.hikari.HikariDataSource :close:350] 
+HikariPool-2 - Shutdown initiated...
+
+[ INFO] 2019-11-16 13:36:50,416 [com.zaxxer.hikari.HikariDataSource :close:352] 
+HikariPool-2 - Shutdown completed.
+
+[ INFO] 2019-11-16 13:36:51,224 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarting:55] 
+Starting ContentManagementApplication on ibi086 with PID 3580 (E:\content-management-workspace\ContentManagement\target\classes started by maheshk in E:\content-management-workspace\ContentManagement)
+
+[ INFO] 2019-11-16 13:36:51,224 [com.sutisoft.contentmanagement.ContentManagementApplication :logStartupProfileInfo:651] 
+No active profile set, falling back to default profiles: default
+
+[ INFO] 2019-11-16 13:36:52,473 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:126] 
+Bootstrapping Spring Data repositories in DEFAULT mode.
+
+[ INFO] 2019-11-16 13:36:52,613 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:182] 
+Finished Spring Data repository scanning in 117ms. Found 5 repository interfaces.
+
+[ INFO] 2019-11-16 13:37:12,254 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarting:55] 
+Starting ContentManagementApplication on ibi086 with PID 5264 (E:\content-management-workspace\ContentManagement\target\classes started by maheshk in E:\content-management-workspace\ContentManagement)
+
+[ INFO] 2019-11-16 13:37:12,254 [com.sutisoft.contentmanagement.ContentManagementApplication :logStartupProfileInfo:651] 
+No active profile set, falling back to default profiles: default
+
+[ INFO] 2019-11-16 13:37:12,442 [org.springframework.boot.devtools.restart.ChangeableUrls :logTo:225] 
+The Class-Path manifest attribute in C:\Users\maheshk\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+
+[ INFO] 2019-11-16 13:37:12,442 [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor :logTo:225] 
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+
+[ INFO] 2019-11-16 13:37:12,442 [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor :logTo:225] 
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+
+[ INFO] 2019-11-16 13:37:14,676 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:126] 
+Bootstrapping Spring Data repositories in DEFAULT mode.
+
+[ INFO] 2019-11-16 13:37:14,945 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:182] 
+Finished Spring Data repository scanning in 239ms. Found 5 repository interfaces.
+
+[ INFO] 2019-11-16 13:37:16,132 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$be22e5ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ INFO] 2019-11-16 13:37:16,255 [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping :afterPropertiesSet:236] 
+Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+
+[ INFO] 2019-11-16 13:37:16,302 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ INFO] 2019-11-16 13:37:17,223 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :initialize:92] 
+Tomcat initialized with port(s): 8080 (http)
+
+[ INFO] 2019-11-16 13:37:17,239 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Initializing ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 13:37:17,239 [org.apache.catalina.core.StandardService :log:173] 
+Starting service [Tomcat]
+
+[ INFO] 2019-11-16 13:37:17,239 [org.apache.catalina.core.StandardEngine :log:173] 
+Starting Servlet engine: [Apache Tomcat/9.0.27]
+
+[ INFO] 2019-11-16 13:37:17,528 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :log:173] 
+Initializing Spring embedded WebApplicationContext
+
+[ INFO] 2019-11-16 13:37:17,529 [org.springframework.web.context.ContextLoader :prepareWebApplicationContext:284] 
+Root WebApplicationContext: initialization completed in 5087 ms
+
+[ INFO] 2019-11-16 13:37:18,019 [org.hibernate.jpa.internal.util.LogHelper :logPersistenceUnitInformation:31] 
+HHH000204: Processing PersistenceUnitInfo [name: default]
+
+[ INFO] 2019-11-16 13:37:18,207 [org.hibernate.Version :logVersion:46] 
+HHH000412: Hibernate Core {5.4.6.Final}
+
+[ INFO] 2019-11-16 13:37:18,574 [org.hibernate.annotations.common.Version :<clinit>:49] 
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+
+[ INFO] 2019-11-16 13:37:18,863 [com.zaxxer.hikari.HikariDataSource :getConnection:110] 
+HikariPool-1 - Starting...
+
+[ INFO] 2019-11-16 13:37:19,222 [com.zaxxer.hikari.HikariDataSource :getConnection:123] 
+HikariPool-1 - Start completed.
+
+[ INFO] 2019-11-16 13:37:19,253 [org.hibernate.dialect.Dialect :<init>:172] 
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+
+[ INFO] 2019-11-16 13:37:21,526 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :initiateService:52] 
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+
+[ INFO] 2019-11-16 13:37:21,550 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :buildNativeEntityManagerFactory:416] 
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 13:37:21,592 [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer :startServer:57] 
+LiveReload server is running on port 35729
+
+[ WARN] 2019-11-16 13:37:23,191 [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :openEntityManagerInViewInterceptor:220] 
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+[ INFO] 2019-11-16 13:37:24,385 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Starting ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 13:37:24,464 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :start:204] 
+Tomcat started on port(s): 8080 (http) with context path ''
+
+[ INFO] 2019-11-16 13:37:24,512 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarted:61] 
+Started ContentManagementApplication in 13.328 seconds (JVM running for 15.413)
+
+[ INFO] 2019-11-16 13:37:34,353 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :log:173] 
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+[ INFO] 2019-11-16 13:37:34,354 [org.springframework.web.servlet.DispatcherServlet :initServletBean:525] 
+Initializing Servlet 'dispatcherServlet'
+
+[ INFO] 2019-11-16 13:37:34,389 [org.springframework.web.servlet.DispatcherServlet :initServletBean:547] 
+Completed initialization in 35 ms
+
+[ INFO] 2019-11-16 13:37:37,894 [com.sutisoft.contentmanagement.controller.IndexController :getContent:53] 
+Start of-com.sutisoft.contentmanagement.controller.IndexController getContent method
+
+[ INFO] 2019-11-16 13:37:37,894 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContent:57] 
+Start of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContent method
+
+[ INFO] 2019-11-16 13:37:39,021 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContent:70] 
+End of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContent method
+
+[ INFO] 2019-11-16 13:37:39,021 [com.sutisoft.contentmanagement.controller.IndexController :getContent:63] 
+End of-com.sutisoft.contentmanagement.controller.IndexController getContent method
+
+[ INFO] 2019-11-16 13:38:09,019 [org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin :shutdown:159] 
+Application shutdown requested.
+
+[ INFO] 2019-11-16 13:38:09,023 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :destroy:598] 
+Closing JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 13:38:09,034 [com.zaxxer.hikari.HikariDataSource :close:350] 
+HikariPool-1 - Shutdown initiated...
+
+[ INFO] 2019-11-16 13:38:09,057 [com.zaxxer.hikari.HikariDataSource :close:352] 
+HikariPool-1 - Shutdown completed.
+
+[ INFO] 2019-11-16 13:38:46,929 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarting:55] 
+Starting ContentManagementApplication on ibi086 with PID 4828 (E:\content-management-workspace\ContentManagement\target\classes started by maheshk in E:\content-management-workspace\ContentManagement)
+
+[ INFO] 2019-11-16 13:38:46,960 [com.sutisoft.contentmanagement.ContentManagementApplication :logStartupProfileInfo:651] 
+No active profile set, falling back to default profiles: default
+
+[ INFO] 2019-11-16 13:38:47,112 [org.springframework.boot.devtools.restart.ChangeableUrls :logTo:225] 
+The Class-Path manifest attribute in C:\Users\maheshk\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+
+[ INFO] 2019-11-16 13:38:47,113 [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor :logTo:225] 
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+
+[ INFO] 2019-11-16 13:38:47,113 [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor :logTo:225] 
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+
+[ INFO] 2019-11-16 13:38:49,333 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:126] 
+Bootstrapping Spring Data repositories in DEFAULT mode.
+
+[ INFO] 2019-11-16 13:38:49,693 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:182] 
+Finished Spring Data repository scanning in 331ms. Found 5 repository interfaces.
+
+[ INFO] 2019-11-16 13:38:51,692 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$565b8d55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ INFO] 2019-11-16 13:38:51,927 [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping :afterPropertiesSet:236] 
+Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+
+[ INFO] 2019-11-16 13:38:52,021 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ INFO] 2019-11-16 13:38:53,243 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :initialize:92] 
+Tomcat initialized with port(s): 8080 (http)
+
+[ INFO] 2019-11-16 13:38:53,266 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Initializing ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 13:38:53,268 [org.apache.catalina.core.StandardService :log:173] 
+Starting service [Tomcat]
+
+[ INFO] 2019-11-16 13:38:53,269 [org.apache.catalina.core.StandardEngine :log:173] 
+Starting Servlet engine: [Apache Tomcat/9.0.27]
+
+[ INFO] 2019-11-16 13:38:53,674 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :log:173] 
+Initializing Spring embedded WebApplicationContext
+
+[ INFO] 2019-11-16 13:38:53,675 [org.springframework.web.context.ContextLoader :prepareWebApplicationContext:284] 
+Root WebApplicationContext: initialization completed in 6561 ms
+
+[ INFO] 2019-11-16 13:38:54,411 [org.hibernate.jpa.internal.util.LogHelper :logPersistenceUnitInformation:31] 
+HHH000204: Processing PersistenceUnitInfo [name: default]
+
+[ INFO] 2019-11-16 13:38:54,678 [org.hibernate.Version :logVersion:46] 
+HHH000412: Hibernate Core {5.4.6.Final}
+
+[ INFO] 2019-11-16 13:38:55,208 [org.hibernate.annotations.common.Version :<clinit>:49] 
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+
+[ INFO] 2019-11-16 13:38:55,631 [com.zaxxer.hikari.HikariDataSource :getConnection:110] 
+HikariPool-1 - Starting...
+
+[ INFO] 2019-11-16 13:38:56,170 [com.zaxxer.hikari.HikariDataSource :getConnection:123] 
+HikariPool-1 - Start completed.
+
+[ INFO] 2019-11-16 13:38:56,201 [org.hibernate.dialect.Dialect :<init>:172] 
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+
+[ INFO] 2019-11-16 13:38:59,091 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :initiateService:52] 
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+
+[ INFO] 2019-11-16 13:38:59,115 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :buildNativeEntityManagerFactory:416] 
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 13:38:59,217 [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer :startServer:57] 
+LiveReload server is running on port 35729
+
+[ WARN] 2019-11-16 13:39:01,834 [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :openEntityManagerInViewInterceptor:220] 
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+[ INFO] 2019-11-16 13:39:03,755 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Starting ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 13:39:03,990 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :start:204] 
+Tomcat started on port(s): 8080 (http) with context path ''
+
+[ INFO] 2019-11-16 13:39:04,005 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarted:61] 
+Started ContentManagementApplication in 18.172 seconds (JVM running for 20.221)
+
+[ INFO] 2019-11-16 13:39:13,548 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :log:173] 
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+[ INFO] 2019-11-16 13:39:13,548 [org.springframework.web.servlet.DispatcherServlet :initServletBean:525] 
+Initializing Servlet 'dispatcherServlet'
+
+[ INFO] 2019-11-16 13:39:13,549 [org.springframework.web.servlet.DispatcherServlet :initServletBean:547] 
+Completed initialization in 1 ms
+
+[ INFO] 2019-11-16 13:39:27,662 [com.sutisoft.contentmanagement.controller.IndexController :getContent:53] 
+Start of-com.sutisoft.contentmanagement.controller.IndexController getContent method
+
+[ INFO] 2019-11-16 13:39:27,678 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContent:57] 
+Start of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContent method
+
+[ INFO] 2019-11-16 13:39:28,995 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContent:70] 
+End of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContent method
+
+[ INFO] 2019-11-16 13:39:29,011 [com.sutisoft.contentmanagement.controller.IndexController :getContent:63] 
+End of-com.sutisoft.contentmanagement.controller.IndexController getContent method
+
+[ INFO] 2019-11-16 13:41:48,149 [org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin :shutdown:159] 
+Application shutdown requested.
+
+[ INFO] 2019-11-16 13:41:48,150 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :destroy:598] 
+Closing JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 13:41:48,181 [com.zaxxer.hikari.HikariDataSource :close:350] 
+HikariPool-1 - Shutdown initiated...
+
+[ INFO] 2019-11-16 13:41:48,197 [com.zaxxer.hikari.HikariDataSource :close:352] 
+HikariPool-1 - Shutdown completed.
+
+[ INFO] 2019-11-16 13:47:24,525 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarting:55] 
+Starting ContentManagementApplication on ibi086 with PID 5996 (E:\content-management-workspace\ContentManagement\target\classes started by maheshk in E:\content-management-workspace\ContentManagement)
+
+[ INFO] 2019-11-16 13:47:24,525 [com.sutisoft.contentmanagement.ContentManagementApplication :logStartupProfileInfo:651] 
+No active profile set, falling back to default profiles: default
+
+[ INFO] 2019-11-16 13:47:24,737 [org.springframework.boot.devtools.restart.ChangeableUrls :logTo:225] 
+The Class-Path manifest attribute in C:\Users\maheshk\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/maheshk/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+
+[ INFO] 2019-11-16 13:47:24,737 [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor :logTo:225] 
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+
+[ INFO] 2019-11-16 13:47:24,737 [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor :logTo:225] 
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+
+[ INFO] 2019-11-16 13:47:26,559 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:126] 
+Bootstrapping Spring Data repositories in DEFAULT mode.
+
+[ INFO] 2019-11-16 13:47:26,783 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:182] 
+Finished Spring Data repository scanning in 202ms. Found 5 repository interfaces.
+
+[ INFO] 2019-11-16 13:47:27,534 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8a48dbf6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ INFO] 2019-11-16 13:47:27,614 [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping :afterPropertiesSet:236] 
+Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+
+[ INFO] 2019-11-16 13:47:27,681 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ INFO] 2019-11-16 13:47:28,361 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :initialize:92] 
+Tomcat initialized with port(s): 8080 (http)
+
+[ INFO] 2019-11-16 13:47:28,376 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Initializing ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 13:47:28,376 [org.apache.catalina.core.StandardService :log:173] 
+Starting service [Tomcat]
+
+[ INFO] 2019-11-16 13:47:28,376 [org.apache.catalina.core.StandardEngine :log:173] 
+Starting Servlet engine: [Apache Tomcat/9.0.27]
+
+[ INFO] 2019-11-16 13:47:28,658 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :log:173] 
+Initializing Spring embedded WebApplicationContext
+
+[ INFO] 2019-11-16 13:47:28,658 [org.springframework.web.context.ContextLoader :prepareWebApplicationContext:284] 
+Root WebApplicationContext: initialization completed in 3921 ms
+
+[ INFO] 2019-11-16 13:47:29,035 [org.hibernate.jpa.internal.util.LogHelper :logPersistenceUnitInformation:31] 
+HHH000204: Processing PersistenceUnitInfo [name: default]
+
+[ INFO] 2019-11-16 13:47:29,318 [org.hibernate.Version :logVersion:46] 
+HHH000412: Hibernate Core {5.4.6.Final}
+
+[ INFO] 2019-11-16 13:47:29,579 [org.hibernate.annotations.common.Version :<clinit>:49] 
+HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+
+[ INFO] 2019-11-16 13:47:29,814 [com.zaxxer.hikari.HikariDataSource :getConnection:110] 
+HikariPool-1 - Starting...
+
+[ INFO] 2019-11-16 13:47:30,098 [com.zaxxer.hikari.HikariDataSource :getConnection:123] 
+HikariPool-1 - Start completed.
+
+[ INFO] 2019-11-16 13:47:30,147 [org.hibernate.dialect.Dialect :<init>:172] 
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+
+[ INFO] 2019-11-16 13:47:31,770 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :initiateService:52] 
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+
+[ INFO] 2019-11-16 13:47:31,801 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :buildNativeEntityManagerFactory:416] 
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 13:47:31,835 [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer :startServer:57] 
+LiveReload server is running on port 35729
+
+[ WARN] 2019-11-16 13:47:33,235 [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :openEntityManagerInViewInterceptor:220] 
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+[ INFO] 2019-11-16 13:47:34,072 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Starting ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 13:47:34,158 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :start:204] 
+Tomcat started on port(s): 8080 (http) with context path ''
+
+[ INFO] 2019-11-16 13:47:34,158 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarted:61] 
+Started ContentManagementApplication in 10.658 seconds (JVM running for 13.365)
+
+[ INFO] 2019-11-16 13:48:33,532 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :log:173] 
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+[ INFO] 2019-11-16 13:48:33,533 [org.springframework.web.servlet.DispatcherServlet :initServletBean:525] 
+Initializing Servlet 'dispatcherServlet'
+
+[ INFO] 2019-11-16 13:48:33,564 [org.springframework.web.servlet.DispatcherServlet :initServletBean:547] 
+Completed initialization in 29 ms
+
+[ INFO] 2019-11-16 13:48:33,662 [com.sutisoft.contentmanagement.controller.IndexController :getContent:53] 
+Start of-com.sutisoft.contentmanagement.controller.IndexController getContent method
+
+[ INFO] 2019-11-16 13:48:33,662 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContent:57] 
+Start of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContent method
+
+[ INFO] 2019-11-16 13:48:33,819 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContent:70] 
+End of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContent method
+
+[ INFO] 2019-11-16 13:48:33,835 [com.sutisoft.contentmanagement.controller.IndexController :getContent:63] 
+End of-com.sutisoft.contentmanagement.controller.IndexController getContent method
+
+[ INFO] 2019-11-16 13:51:53,023 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :destroy:598] 
+Closing JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 13:51:53,023 [com.zaxxer.hikari.HikariDataSource :close:350] 
+HikariPool-1 - Shutdown initiated...
+
+[ INFO] 2019-11-16 13:51:53,039 [com.zaxxer.hikari.HikariDataSource :close:352] 
+HikariPool-1 - Shutdown completed.
+
+[ INFO] 2019-11-16 13:51:53,459 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarting:55] 
+Starting ContentManagementApplication on ibi086 with PID 5996 (E:\content-management-workspace\ContentManagement\target\classes started by maheshk in E:\content-management-workspace\ContentManagement)
+
+[ INFO] 2019-11-16 13:51:53,459 [com.sutisoft.contentmanagement.ContentManagementApplication :logStartupProfileInfo:651] 
+No active profile set, falling back to default profiles: default
+
+[ INFO] 2019-11-16 13:51:54,162 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:126] 
+Bootstrapping Spring Data repositories in DEFAULT mode.
+
+[ INFO] 2019-11-16 13:51:54,228 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:182] 
+Finished Spring Data repository scanning in 70ms. Found 5 repository interfaces.
+
+[ INFO] 2019-11-16 13:51:54,431 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8a48dbf6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ INFO] 2019-11-16 13:51:54,431 [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping :afterPropertiesSet:236] 
+Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+
+[ INFO] 2019-11-16 13:51:54,446 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ WARN] 2019-11-16 13:51:54,541 [org.apache.tomcat.util.modeler.Registry :log:173] 
+The MBean registry cannot be disabled because it has already been initialised
+
+[ INFO] 2019-11-16 13:51:54,759 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :initialize:92] 
+Tomcat initialized with port(s): 8080 (http)
+
+[ INFO] 2019-11-16 13:51:54,759 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Initializing ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 13:51:54,759 [org.apache.catalina.core.StandardService :log:173] 
+Starting service [Tomcat]
+
+[ INFO] 2019-11-16 13:51:54,759 [org.apache.catalina.core.StandardEngine :log:173] 
+Starting Servlet engine: [Apache Tomcat/9.0.27]
+
+[ INFO] 2019-11-16 13:51:54,837 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :log:173] 
+Initializing Spring embedded WebApplicationContext
+
+[ INFO] 2019-11-16 13:51:54,837 [org.springframework.web.context.ContextLoader :prepareWebApplicationContext:284] 
+Root WebApplicationContext: initialization completed in 1362 ms
+
+[ INFO] 2019-11-16 13:51:54,962 [org.hibernate.jpa.internal.util.LogHelper :logPersistenceUnitInformation:31] 
+HHH000204: Processing PersistenceUnitInfo [name: default]
+
+[ INFO] 2019-11-16 13:51:54,978 [com.zaxxer.hikari.HikariDataSource :getConnection:110] 
+HikariPool-2 - Starting...
+
+[ INFO] 2019-11-16 13:51:54,993 [com.zaxxer.hikari.HikariDataSource :getConnection:123] 
+HikariPool-2 - Start completed.
+
+[ INFO] 2019-11-16 13:51:54,993 [org.hibernate.dialect.Dialect :<init>:172] 
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+
+[ INFO] 2019-11-16 13:51:55,288 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :initiateService:52] 
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+
+[ INFO] 2019-11-16 13:51:55,288 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :buildNativeEntityManagerFactory:416] 
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 13:51:55,289 [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer :startServer:57] 
+LiveReload server is running on port 35729
+
+[ WARN] 2019-11-16 13:51:55,771 [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :openEntityManagerInViewInterceptor:220] 
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+[ INFO] 2019-11-16 13:51:56,210 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Starting ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 13:51:56,225 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :start:204] 
+Tomcat started on port(s): 8080 (http) with context path ''
+
+[ INFO] 2019-11-16 13:51:56,225 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarted:61] 
+Started ContentManagementApplication in 2.859 seconds (JVM running for 275.424)
+
+[ INFO] 2019-11-16 13:51:56,225 [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener :onApplicationEvent:63] 
+Condition evaluation unchanged
+
+[ INFO] 2019-11-16 13:52:16,178 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :destroy:598] 
+Closing JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 13:52:16,178 [com.zaxxer.hikari.HikariDataSource :close:350] 
+HikariPool-2 - Shutdown initiated...
+
+[ INFO] 2019-11-16 13:52:16,210 [com.zaxxer.hikari.HikariDataSource :close:352] 
+HikariPool-2 - Shutdown completed.
+
+[ INFO] 2019-11-16 13:52:16,537 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarting:55] 
+Starting ContentManagementApplication on ibi086 with PID 5996 (E:\content-management-workspace\ContentManagement\target\classes started by maheshk in E:\content-management-workspace\ContentManagement)
+
+[ INFO] 2019-11-16 13:52:16,537 [com.sutisoft.contentmanagement.ContentManagementApplication :logStartupProfileInfo:651] 
+No active profile set, falling back to default profiles: default
+
+[ INFO] 2019-11-16 13:52:17,112 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:126] 
+Bootstrapping Spring Data repositories in DEFAULT mode.
+
+[ INFO] 2019-11-16 13:52:17,211 [org.springframework.data.repository.config.RepositoryConfigurationDelegate :registerRepositoriesIn:182] 
+Finished Spring Data repository scanning in 75ms. Found 5 repository interfaces.
+
+[ INFO] 2019-11-16 13:52:17,368 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8a48dbf6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ INFO] 2019-11-16 13:52:17,383 [org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping :afterPropertiesSet:236] 
+Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+
+[ INFO] 2019-11-16 13:52:17,399 [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker :postProcessAfterInitialization:330] 
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[ WARN] 2019-11-16 13:52:17,477 [org.apache.tomcat.util.modeler.Registry :log:173] 
+The MBean registry cannot be disabled because it has already been initialised
+
+[ INFO] 2019-11-16 13:52:17,709 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :initialize:92] 
+Tomcat initialized with port(s): 8080 (http)
+
+[ INFO] 2019-11-16 13:52:17,709 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Initializing ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 13:52:17,709 [org.apache.catalina.core.StandardService :log:173] 
+Starting service [Tomcat]
+
+[ INFO] 2019-11-16 13:52:17,709 [org.apache.catalina.core.StandardEngine :log:173] 
+Starting Servlet engine: [Apache Tomcat/9.0.27]
+
+[ INFO] 2019-11-16 13:52:17,772 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :log:173] 
+Initializing Spring embedded WebApplicationContext
+
+[ INFO] 2019-11-16 13:52:17,772 [org.springframework.web.context.ContextLoader :prepareWebApplicationContext:284] 
+Root WebApplicationContext: initialization completed in 1232 ms
+
+[ INFO] 2019-11-16 13:52:17,881 [org.hibernate.jpa.internal.util.LogHelper :logPersistenceUnitInformation:31] 
+HHH000204: Processing PersistenceUnitInfo [name: default]
+
+[ INFO] 2019-11-16 13:52:17,881 [com.zaxxer.hikari.HikariDataSource :getConnection:110] 
+HikariPool-3 - Starting...
+
+[ INFO] 2019-11-16 13:52:17,896 [com.zaxxer.hikari.HikariDataSource :getConnection:123] 
+HikariPool-3 - Start completed.
+
+[ INFO] 2019-11-16 13:52:17,896 [org.hibernate.dialect.Dialect :<init>:172] 
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+
+[ INFO] 2019-11-16 13:52:18,163 [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator :initiateService:52] 
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+
+[ INFO] 2019-11-16 13:52:18,163 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :buildNativeEntityManagerFactory:416] 
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 13:52:18,178 [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer :startServer:57] 
+LiveReload server is running on port 35729
+
+[ WARN] 2019-11-16 13:52:18,566 [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration :openEntityManagerInViewInterceptor:220] 
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+[ INFO] 2019-11-16 13:52:18,943 [org.apache.coyote.http11.Http11NioProtocol :log:173] 
+Starting ProtocolHandler ["http-nio-8080"]
+
+[ INFO] 2019-11-16 13:52:18,959 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer :start:204] 
+Tomcat started on port(s): 8080 (http) with context path ''
+
+[ INFO] 2019-11-16 13:52:18,959 [com.sutisoft.contentmanagement.ContentManagementApplication :logStarted:61] 
+Started ContentManagementApplication in 2.489 seconds (JVM running for 298.165)
+
+[ INFO] 2019-11-16 13:52:18,974 [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener :onApplicationEvent:63] 
+Condition evaluation unchanged
+
+[ INFO] 2019-11-16 13:52:26,548 [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] :log:173] 
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+[ INFO] 2019-11-16 13:52:26,564 [org.springframework.web.servlet.DispatcherServlet :initServletBean:525] 
+Initializing Servlet 'dispatcherServlet'
+
+[ INFO] 2019-11-16 13:52:26,580 [org.springframework.web.servlet.DispatcherServlet :initServletBean:547] 
+Completed initialization in 0 ms
+
+[ INFO] 2019-11-16 13:52:26,596 [com.sutisoft.contentmanagement.controller.IndexController :getContentList:33] 
+Start of-com.sutisoft.contentmanagement.controller.IndexController getContentList method
+
+[ INFO] 2019-11-16 13:52:26,596 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContentList:36] 
+Start of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContentList method
+
+[ INFO] 2019-11-16 13:52:26,611 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContentList:51] 
+End of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContentList method
+
+[ INFO] 2019-11-16 13:52:26,611 [com.sutisoft.contentmanagement.controller.IndexController :getContentList:44] 
+End of-com.sutisoft.contentmanagement.controller.IndexController getContentList method
+
+[ INFO] 2019-11-16 13:52:36,554 [com.sutisoft.contentmanagement.controller.IndexController :getContentList:33] 
+Start of-com.sutisoft.contentmanagement.controller.IndexController getContentList method
+
+[ INFO] 2019-11-16 13:52:36,554 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContentList:36] 
+Start of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContentList method
+
+[ INFO] 2019-11-16 13:52:36,555 [com.sutisoft.contentmanagement.services.ContentManagementServiceImpl :getContentList:51] 
+End of-com.sutisoft.contentmanagement.services.IndexServiceImpl getContentList method
+
+[ INFO] 2019-11-16 13:52:36,555 [com.sutisoft.contentmanagement.controller.IndexController :getContentList:44] 
+End of-com.sutisoft.contentmanagement.controller.IndexController getContentList method
+
+[ INFO] 2019-11-16 13:59:55,686 [org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin :shutdown:159] 
+Application shutdown requested.
+
+[ INFO] 2019-11-16 13:59:55,702 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean :destroy:598] 
+Closing JPA EntityManagerFactory for persistence unit 'default'
+
+[ INFO] 2019-11-16 13:59:55,702 [com.zaxxer.hikari.HikariDataSource :close:350] 
+HikariPool-3 - Shutdown initiated...
+
+[ INFO] 2019-11-16 13:59:55,703 [com.zaxxer.hikari.HikariDataSource :close:352] 
+HikariPool-3 - Shutdown completed.
+
