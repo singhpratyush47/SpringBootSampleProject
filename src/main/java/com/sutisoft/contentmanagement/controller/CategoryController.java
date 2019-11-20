@@ -54,9 +54,9 @@ public class CategoryController {
 		logger.info("Start of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
 		ResponseEntity<String> response=new ResponseEntity<>("Category Updated Successfully",HttpStatus.OK);
 		try {
-			Integer updateStatus= categoryService.update(categoryCommand,apiKey);
-			if(updateStatus==null) {
-				response=new ResponseEntity<>("Category Id not found to update",HttpStatus.NOT_FOUND);
+			Category savedOrUpdatedCategory= categoryService.saveOrUpdate(categoryCommand,apiKey);
+			if(savedOrUpdatedCategory==null) {
+				response=new ResponseEntity<>("Failed To Save/Update Category",HttpStatus.NOT_FOUND);
 			}
 		} catch (Exception e) {
 			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()

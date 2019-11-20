@@ -18,5 +18,7 @@ public interface ProductService {
 
 	public Integer update(ProductCommand productCommand, String apiKey);
 
+	public Product saveOrUpdate(ProductCommand productCommand, String apiKey);
+	
 	public Integer delete(Product product,String companyApiKey);
 }

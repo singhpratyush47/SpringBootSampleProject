@@ -61,8 +61,9 @@ public class ContentManagementController {
 		logger.info("Start of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
 		ResponseEntity<String> response=new ResponseEntity<>("Content updated Successfully",HttpStatus.OK);
 		try {
-		Integer updateStatus=	contentManagementService.update(contentManagementCommand,apiKey);
-		if(updateStatus==null) {
+		ContentManagement savedOrUpdatedContent=contentManagementService.saveOrUpdate
+																										(contentManagementCommand,apiKey);
+		if(savedOrUpdatedContent==null) {
 			response=new ResponseEntity<>("Content updated Failed",HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		} catch (Exception e) {

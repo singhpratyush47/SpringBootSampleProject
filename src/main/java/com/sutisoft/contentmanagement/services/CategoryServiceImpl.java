@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import com.sutisoft.contentmanagement.command.CategoryCommand;
+import com.sutisoft.contentmanagement.converters.CategoryCommandToCategory;
 import com.sutisoft.contentmanagement.domain.Category;
 import com.sutisoft.contentmanagement.domain.StatusMain;
 import com.sutisoft.contentmanagement.repositories.CategoryRepository;
@@ -24,11 +25,14 @@ public class CategoryServiceImpl implements CategoryService {
 	
 	private final CategoryRepository categoryRepo;
 	private final CompanyRepository companyRep;
+	private final CategoryCommandToCategory commandToCategory;
 	
-	public CategoryServiceImpl(CategoryRepository categoryRepo,CompanyRepository companyRep) {
+	public CategoryServiceImpl(CategoryRepository categoryRepo,CompanyRepository companyRep,
+			CategoryCommandToCategory commandToCategory) {
 		super();
 		this.categoryRepo = categoryRepo;
 		this.companyRep=companyRep;
+		this.commandToCategory=commandToCategory;
 	}
 
 	@Override
@@ -50,7 +54,6 @@ public class CategoryServiceImpl implements CategoryService {
 	}
 
 	@Override
-	@Transactional
 	public Category save(Category category,String apiKey) {
 		logger.info("Start of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
 		Integer companyId=null;
@@ -68,7 +71,6 @@ public class CategoryServiceImpl implements CategoryService {
 	}
 
 	@Override
-	@Transactional
 	public Integer update(CategoryCommand categoryCommand, String apiKey) {
 		logger.info("Start of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
 		Integer companyId=null;
@@ -100,6 +102,49 @@ public class CategoryServiceImpl implements CategoryService {
 		}
 		logger.info("End of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
 		return updateStatus;
+	}
+
+	@Override
+	public Category saveOrUpdate(CategoryCommand categoryCommand, String apiKey) {
+		logger.info("Start of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
+		Integer companyId=null;
+		Integer categoryIdToBeUpdated=null;
+		String updatedCategoryName=null;
+		String updatedCategoryType=null;
+		Category savedOrUpdatedCategory=null;
+		try {
+			companyId= companyRep.findByApiKey(apiKey);
+			categoryIdToBeUpdated=categoryRepo.findByNameAndCompanyId(categoryCommand.getOldName(), companyId);
+			updatedCategoryName=categoryCommand.getName();
+			updatedCategoryType=categoryCommand.getType();
+			Category category=null;
+			
+			if(categoryIdToBeUpdated==null) {
+				//save new Category
+				category= commandToCategory.convert(categoryCommand);
+				category.setCompanyId(companyId);
+			}else {
+				//update existing category
+				Optional<Category> optionalCategory=categoryRepo.findById(categoryIdToBeUpdated);
+				category=optionalCategory.get();
+				category.setCategoryId(categoryIdToBeUpdated);
+				category.setName(updatedCategoryName);
+				category.setType(updatedCategoryType);
+				category.setLastModifiedDate(new Date());
+				
+				StatusMain statusMain=new StatusMain();
+				statusMain.setStatusId(categoryCommand.getStatusId());
+				category.setStatus(statusMain);
+			}
+			
+			savedOrUpdatedCategory= categoryRepo.save(category);
+			logger.info("##Saved Or Updated Category Is --->"+savedOrUpdatedCategory);
+		} catch (Exception e) {
+			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
+                    + " --> Error is : " + e.getMessage(),e); 
+		}
+		logger.info("End of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
+		return savedOrUpdatedCategory;
 	}
 
 }
