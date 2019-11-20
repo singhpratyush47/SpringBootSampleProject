@@ -54,9 +54,9 @@ public class ProductController {
 		logger.info("Start of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
 		ResponseEntity<String> response=new ResponseEntity<>("Product Updated Successfully",HttpStatus.OK);
 		try {
-			Integer updateStatus=productService.update(productCommand,apiKey);
-			if(updateStatus==null) {
-				response=new ResponseEntity<>("Product Id Not Found To Update",HttpStatus.NOT_FOUND);
+			Product savedOrUpdatedProduct=productService.saveOrUpdate(productCommand,apiKey);
+			if(savedOrUpdatedProduct==null) {
+				response=new ResponseEntity<>("Failed To Save Or Update Product",HttpStatus.NOT_FOUND);
 			}
 		} catch (Exception e) {
 			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()

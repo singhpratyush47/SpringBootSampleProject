@@ -42,7 +42,6 @@ public class StatusMainServiceImpl implements StatusMainService {
 	}
 
 	@Override
-	@Transactional
 	public StatusMain save(StatusMain status) {
 		logger.info("Start of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
 		StatusMain savedStatusMain= statusMainRepo.save(status);
