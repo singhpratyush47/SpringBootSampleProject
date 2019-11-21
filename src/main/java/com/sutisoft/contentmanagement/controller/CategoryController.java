@@ -65,4 +65,25 @@ public class CategoryController {
 		logger.info("End of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
 		return response;
 	}
+	
+	@PostMapping(value="/deleteCategory/{apiKey}",consumes="application/json")
+	public ResponseEntity<String> deleteCategory(@PathVariable(value="apiKey") String apiKey,
+			@RequestBody CategoryCommand categoryCommand){
+		
+		logger.info("Start of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
+		ResponseEntity<String> response=new ResponseEntity<>("Category deleted Successfully",HttpStatus.OK);
+		try {
+			Category categoryToBeDeleted= categoryCommandToCategory.convert(categoryCommand);
+			Integer deletedStatus= categoryService.delete(categoryToBeDeleted, apiKey);
+			if(deletedStatus==null) {
+				response=new ResponseEntity<>("Category Not Found To Deletion",HttpStatus.NOT_FOUND);
+			}
+		} catch (Exception e) {
+			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
+                    + " --> Error is : " + e.getMessage(),e); 
+		}
+		logger.info("End of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
+		return response;
+	}
+	
 }
