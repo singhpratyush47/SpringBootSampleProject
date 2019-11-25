@@ -52,11 +52,11 @@ public class CategoryController {
 			@RequestBody CategoryCommand categoryCommand) {
 		
 		logger.info("Start of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
-		ResponseEntity<String> response=new ResponseEntity<>("Category Updated Successfully",HttpStatus.OK);
+		ResponseEntity<String> response=new ResponseEntity<>("Category saved or Updated Successfully",HttpStatus.OK);
 		try {
 			Category savedOrUpdatedCategory= categoryService.saveOrUpdate(categoryCommand,apiKey);
 			if(savedOrUpdatedCategory==null) {
-				response=new ResponseEntity<>("Failed To Save/Update Category",HttpStatus.NOT_FOUND);
+				response=new ResponseEntity<>("Failed To Save or Update Category",HttpStatus.NOT_FOUND);
 			}
 		} catch (Exception e) {
 			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()

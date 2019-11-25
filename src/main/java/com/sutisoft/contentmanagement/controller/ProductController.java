@@ -52,7 +52,7 @@ public class ProductController {
 			@RequestBody ProductCommand productCommand) {
 		
 		logger.info("Start of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
-		ResponseEntity<String> response=new ResponseEntity<>("Product Updated Successfully",HttpStatus.OK);
+		ResponseEntity<String> response=new ResponseEntity<>("Product saved or Updated Successfully",HttpStatus.OK);
 		try {
 			Product savedOrUpdatedProduct=productService.saveOrUpdate(productCommand,apiKey);
 			if(savedOrUpdatedProduct==null) {
