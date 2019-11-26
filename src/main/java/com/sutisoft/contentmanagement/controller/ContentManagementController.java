@@ -47,6 +47,7 @@ public class ContentManagementController {
 			if(savedContentManagement==null) {
 				response=new ResponseEntity<String>("Contents saving failed",HttpStatus.INTERNAL_SERVER_ERROR);
 			}
+			logger.info("##Save Content --> "+savedContentManagement);	
 		} catch (Exception e) {
 			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
                     + " --> Error is : " + e.getMessage(),e); 
@@ -66,6 +67,7 @@ public class ContentManagementController {
 		if(savedOrUpdatedContent==null) {
 			response=new ResponseEntity<>("Content updated Failed",HttpStatus.INTERNAL_SERVER_ERROR);
 		}
+		logger.info("##saveOrUpdate Content --> "+savedOrUpdatedContent);
 		} catch (Exception e) {
 			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
                     + " --> Error is : " + e.getMessage(),e); 

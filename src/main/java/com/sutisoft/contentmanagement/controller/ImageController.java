@@ -35,6 +35,7 @@ public class ImageController {
 			if(saveStatus==null) {
 				response=new ResponseEntity<String>("Image save Failed",HttpStatus.INTERNAL_SERVER_ERROR);
 			}
+			logger.info("##Save Image --->"+imageCommand);
 		} catch (Exception e) {
 			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
                     + " --> Error is : " + e.getMessage(),e); 
@@ -54,8 +55,10 @@ public class ImageController {
 			if(fileDeleteStatus==null) {
 				response=new ResponseEntity<String>("Image deletion Failed",HttpStatus.INTERNAL_SERVER_ERROR);
 			}
+			logger.info("##Delete Image --->"+imageCommand);
 		} catch (Exception e) {
-			e.printStackTrace();
+			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
+                    + " --> Error is : " + e.getMessage(),e); 
 		}
 		logger.info("End of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
 				return response;

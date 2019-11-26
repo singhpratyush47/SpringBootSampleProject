@@ -39,6 +39,7 @@ public class ProductController {
 			if(savedProduct==null) {
 				response=new ResponseEntity<>("Product not saved Successfully",HttpStatus.INTERNAL_SERVER_ERROR);
 			}
+			logger.info("##Saved Product--> "+savedProduct);
 		} catch (Exception e) {
 			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
                     + " --> Error is : " + e.getMessage(),e); 
@@ -58,6 +59,7 @@ public class ProductController {
 			if(savedOrUpdatedProduct==null) {
 				response=new ResponseEntity<>("Failed To Save Or Update Product",HttpStatus.NOT_FOUND);
 			}
+			logger.info("##SaveOrUpdate Product--> "+savedOrUpdatedProduct);
 		} catch (Exception e) {
 			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
                     + " --> Error is : " + e.getMessage(),e); 
@@ -78,6 +80,7 @@ public class ProductController {
 			if(deletedStatus==null) {
 				response=new ResponseEntity<>("Product id Not Found To Deletion",HttpStatus.NOT_FOUND);
 			}
+			logger.info("##Delete Product--> "+product);
 		} catch (Exception e) {
 			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
                     + " --> Error is : " + e.getMessage(),e); 
