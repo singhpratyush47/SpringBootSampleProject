@@ -59,10 +59,14 @@ public class IndexServiceImpl implements IndexService {
 		Integer companyId=null;
 		ContentManagement contentManagement=null;
 		ContentManagementCommand contentManagementCommand=null;
+		List<ContentManagement> listOfSameKeyContents=new ArrayList<>();
 		try {
 			companyId=companyRepository.findByApiKey(apiKey);
-			contentManagement=contentManagementRepo.findByProductAndContentIdAndCompanyId(productName,
+			listOfSameKeyContents=contentManagementRepo.findByProductAndContentIdAndCompanyId(productName,
 					contentKey, companyId,StatusMap.ACTIVE);
+			if(listOfSameKeyContents!=null && !listOfSameKeyContents.isEmpty()) {
+				contentManagement=listOfSameKeyContents.get(listOfSameKeyContents.size()-1);
+			}
 			contentManagementCommand=commandConverter.convert(contentManagement);
 		} catch (Exception e) {
 			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()

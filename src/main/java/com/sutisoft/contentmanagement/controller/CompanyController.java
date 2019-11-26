@@ -37,6 +37,7 @@ public class CompanyController {
 			if(savedCompany==null) {
 				response=new ResponseEntity<String>("Company Creation Failed",HttpStatus.INTERNAL_SERVER_ERROR);
 			}
+			logger.info("##Create Company--> "+savedCompany);
 		} catch (Exception e) {
 			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
                     + " --> Error is : " + e.getMessage(),e); 

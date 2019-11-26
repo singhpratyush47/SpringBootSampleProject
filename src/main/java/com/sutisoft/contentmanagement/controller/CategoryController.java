@@ -39,6 +39,7 @@ public class CategoryController {
 			if(savedCategory==null) {
 				response=new ResponseEntity<>("Category not saved Successfully",HttpStatus.INTERNAL_SERVER_ERROR);
 			}
+			logger.info("##Saved Category--> "+savedCategory);
 		} catch (Exception e) {
 			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
                     + " --> Error is : " + e.getMessage(),e); 
@@ -58,6 +59,7 @@ public class CategoryController {
 			if(savedOrUpdatedCategory==null) {
 				response=new ResponseEntity<>("Failed To Save or Update Category",HttpStatus.NOT_FOUND);
 			}
+			logger.info("##SaveOrUpdate Category--> "+savedOrUpdatedCategory);
 		} catch (Exception e) {
 			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
                     + " --> Error is : " + e.getMessage(),e); 
@@ -78,6 +80,7 @@ public class CategoryController {
 			if(deletedStatus==null) {
 				response=new ResponseEntity<>("Category Not Found To Deletion",HttpStatus.NOT_FOUND);
 			}
+			logger.info("##Delete Category--> "+categoryToBeDeleted);
 		} catch (Exception e) {
 			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
                     + " --> Error is : " + e.getMessage(),e); 
