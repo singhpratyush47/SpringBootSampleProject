@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-	  <!--  <property name="HOME_LOG" value="C:/Users/maheshk/Desktop/test/logs/"/>-->
-	 <property name="HOME_LOG" value="/var/logs/"/> 
+	    <!-- <property name="HOME_LOG" value="C:/Users/maheshk/Desktop/test/logs/"/> -->
+	  <property name="HOME_LOG" value="/var/logs/"/>  
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
 		<!-- Log message format -->
 		<encoder>

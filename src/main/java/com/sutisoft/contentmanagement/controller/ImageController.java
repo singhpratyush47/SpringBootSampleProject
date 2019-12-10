@@ -35,7 +35,7 @@ public class ImageController {
 			if(saveStatus==null) {
 				response=new ResponseEntity<String>("Image save Failed",HttpStatus.INTERNAL_SERVER_ERROR);
 			}
-			logger.info("##Save Image --->"+imageCommand);
+			logger.info("##Save Image --->"+imageCommand.getFileName());
 		} catch (Exception e) {
 			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
                     + " --> Error is : " + e.getMessage(),e); 
