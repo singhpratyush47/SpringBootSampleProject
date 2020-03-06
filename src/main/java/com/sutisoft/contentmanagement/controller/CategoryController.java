@@ -39,6 +39,7 @@ public class CategoryController {
 			if(savedCategory==null) {
 				response=new ResponseEntity<>("Category not saved Successfully",HttpStatus.INTERNAL_SERVER_ERROR);
 			}
+			logger.info("##Saved Category--> "+savedCategory);
 		} catch (Exception e) {
 			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
                     + " --> Error is : " + e.getMessage(),e); 
@@ -52,12 +53,13 @@ public class CategoryController {
 			@RequestBody CategoryCommand categoryCommand) {
 		
 		logger.info("Start of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
-		ResponseEntity<String> response=new ResponseEntity<>("Category Updated Successfully",HttpStatus.OK);
+		ResponseEntity<String> response=new ResponseEntity<>("Category saved or Updated Successfully",HttpStatus.OK);
 		try {
-			Integer updateStatus= categoryService.update(categoryCommand,apiKey);
-			if(updateStatus==null) {
-				response=new ResponseEntity<>("Category Id not found to update",HttpStatus.NOT_FOUND);
+			Category savedOrUpdatedCategory= categoryService.saveOrUpdate(categoryCommand,apiKey);
+			if(savedOrUpdatedCategory==null) {
+				response=new ResponseEntity<>("Failed To Save or Update Category",HttpStatus.NOT_FOUND);
 			}
+			logger.info("##SaveOrUpdate Category--> "+savedOrUpdatedCategory);
 		} catch (Exception e) {
 			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
                     + " --> Error is : " + e.getMessage(),e); 
@@ -65,4 +67,26 @@ public class CategoryController {
 		logger.info("End of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
 		return response;
 	}
+	
+	@PostMapping(value="/deleteCategory/{apiKey}",consumes="application/json")
+	public ResponseEntity<String> deleteCategory(@PathVariable(value="apiKey") String apiKey,
+			@RequestBody CategoryCommand categoryCommand){
+		
+		logger.info("Start of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
+		ResponseEntity<String> response=new ResponseEntity<>("Category deleted Successfully",HttpStatus.OK);
+		try {
+			Category categoryToBeDeleted= categoryCommandToCategory.convert(categoryCommand);
+			Integer deletedStatus= categoryService.delete(categoryToBeDeleted, apiKey);
+			if(deletedStatus==null) {
+				response=new ResponseEntity<>("Category Not Found To Deletion",HttpStatus.NOT_FOUND);
+			}
+			logger.info("##Delete Category--> "+categoryToBeDeleted);
+		} catch (Exception e) {
+			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
+                    + " --> Error is : " + e.getMessage(),e); 
+		}
+		logger.info("End of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
+		return response;
+	}
+	
 }

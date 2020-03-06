@@ -15,4 +15,8 @@ public interface CategoryService {
 	public Category save(Category category, String apiKey);
 
 	public Integer update(CategoryCommand categoryCommand, String apiKey);
+	
+	public Category saveOrUpdate(CategoryCommand categoryCommand, String apiKey);
+	
+	public Integer delete(Category category,String apiKey);
 }

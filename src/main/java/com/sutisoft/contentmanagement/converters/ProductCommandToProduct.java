@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 import com.sutisoft.contentmanagement.command.ProductCommand;
 import com.sutisoft.contentmanagement.domain.Product;
 import com.sutisoft.contentmanagement.domain.StatusMain;
+import com.sutisoft.contentmanagement.utils.StatusMap;
 
 @Component
 public class ProductCommandToProduct implements Converter<ProductCommand, Product> {
@@ -27,7 +28,11 @@ public class ProductCommandToProduct implements Converter<ProductCommand, Produc
 		product.setName(source.getProductName());
 		
 		StatusMain status=new StatusMain();
-		status.setStatusId(source.getStatusId());
+		if(source.getStatusId()==null) {
+			status.setStatusId(StatusMap.ACTIVE);
+		}else {
+			status.setStatusId(source.getStatusId());
+		}
 		product.setCreatedDate(new Date());
 		product.setStatus(status);
 		logger.info("End of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");

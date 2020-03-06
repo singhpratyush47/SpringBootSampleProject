@@ -9,9 +9,12 @@ import javax.transaction.Transactional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import com.sutisoft.contentmanagement.command.ProductCommand;
+import com.sutisoft.contentmanagement.converters.ProductCommandToProduct;
 import com.sutisoft.contentmanagement.domain.Product;
 import com.sutisoft.contentmanagement.domain.StatusMain;
 import com.sutisoft.contentmanagement.repositories.CompanyRepository;
@@ -25,11 +28,14 @@ public class ProductServiceImpl implements ProductService {
 	
 	private final ProductRepository productRepo;
 	private final CompanyRepository companyRepo;
+	private final ProductCommandToProduct commandToProduct;
 	
-	public ProductServiceImpl(ProductRepository productRepo,CompanyRepository companyRepo) {
+	public ProductServiceImpl(ProductRepository productRepo,CompanyRepository companyRepo,
+			ProductCommandToProduct commandToProduct) {
 		super();
 		this.productRepo = productRepo;
 		this.companyRepo = companyRepo;
+		this.commandToProduct=commandToProduct;
 	}
 
 	@Override
@@ -51,7 +57,6 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	@Transactional
 	public Product save(Product product,String apiKey) {
 		logger.info("Start of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
 		Integer companyId=null;
@@ -69,7 +74,6 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	@Transactional
 	public Integer update(ProductCommand productCommand, String apiKey) {
 		logger.info("Start of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
 		Integer companyId=null;
@@ -107,7 +111,6 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	@Transactional
 	public Integer delete(Product product, String companyApiKey) {
 		logger.info("Start of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
 		Integer companyId=null;
@@ -133,6 +136,57 @@ public class ProductServiceImpl implements ProductService {
 		}
 		logger.info("End of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
 		return updateStatus;
+	}
+
+	@Override
+	public Product saveOrUpdate(ProductCommand productCommand, String apiKey) {
+		logger.info("Start of-"+this.getClass().getName()+" "+Thread.currentThread().getStackTrace()[1].getMethodName()+" method");
+		Integer companyId=null;
+		Integer productIdToUpdate=null;
+		String updateProductName=null;
+		String updatedProductDescription=null;
+		Integer updatedStatus=null;
+		Product product=null;
+		Product saveOrUpdatedProduct=null;
+		try {
+			companyId=companyRepo.findByApiKey(apiKey);
+			productIdToUpdate=productRepo.findByNameAndCompanyId(productCommand.getOldProductName(), companyId);
+			updateProductName=productCommand.getProductName();
+			updatedProductDescription=productCommand.getDescription();
+			updatedStatus=productCommand.getStatusId();
+
+			if(productIdToUpdate==null) {
+				//create new Product 
+				product= commandToProduct.convert(productCommand);
+				product.setCompanyId(companyId);
+			}else {
+				//update existing product
+				Optional<Product> optionalProduct=productRepo.findById(productIdToUpdate);
+				product=optionalProduct.get();
+				product.setProductId(productIdToUpdate);
+				product.setName(updateProductName);
+				product.setDescription(updatedProductDescription);
+				product.setUpdatedDate(new Date());
+				product.setCompanyId(companyId);
+				
+				StatusMain statusMain=new StatusMain();
+				statusMain.setStatusId(updatedStatus);
+				product.setStatus(statusMain);
+			}
+			saveOrUpdatedProduct= productRepo.save(product);
+			logger.info("##Saved Or Updated Product Is --->"+saveOrUpdatedProduct);
+		} catch (Exception e) {
+			logger.error(this.getClass().getName() + " --> "+ Thread.currentThread().getStackTrace()[1].getMethodName()
+                    + " --> Error is : " + e.getMessage(),e); 
+		}
+		return saveOrUpdatedProduct;
+	}
+
+	@Override
+	public List<Product> findByName(String productName) {
+		List<Product> productList=new ArrayList<Product>();
+		productList=productRepo.findByName(productName);
+		return productList;
 	}
 
 }

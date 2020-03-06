@@ -2,8 +2,6 @@ package com.sutisoft.contentmanagement.services;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
-
 import com.sutisoft.contentmanagement.command.ProductCommand;
 import com.sutisoft.contentmanagement.domain.Product;
 
@@ -18,5 +16,9 @@ public interface ProductService {
 
 	public Integer update(ProductCommand productCommand, String apiKey);
 
+	public Product saveOrUpdate(ProductCommand productCommand, String apiKey);
+	
 	public Integer delete(Product product,String companyApiKey);
+	
+	public List<Product> findByName(String productName);
 }

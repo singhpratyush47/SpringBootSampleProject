@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-	<!-- <property name="HOME_LOG" value="C:/Users/maheshk/Desktop/test/logs/application.log"/> -->
-	<property name="HOME_LOG" value="/var/logs/application.log"/>
+	    <!-- <property name="HOME_LOG" value="C:/Users/maheshk/Desktop/test/logs/"/> -->
+	  <property name="HOME_LOG" value="/var/logs/"/>  
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
 		<!-- Log message format -->
 		<encoder>
@@ -10,9 +10,9 @@
 	</appender>
 	<appender name="FILE"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>${HOME_LOG}</file>
+		<file>${HOME_LOG}/application.log</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>logs/se-oauth-%d{ddMMMyyyy-a}.log</fileNamePattern>
+			<fileNamePattern>${HOME_LOG}/Dailylogs/desk-%d{ddMMMyyyy-a}.log</fileNamePattern>
 			<maxHistory>60</maxHistory>
 			<!-- <totalSizeCap>2MB</totalSizeCap> -->
 		</rollingPolicy>

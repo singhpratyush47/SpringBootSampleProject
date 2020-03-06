@@ -25,6 +25,6 @@ public interface ContentManagementRepository extends JpaRepository<ContentManage
 	
 	@Query("select c from ContentManagement c where c.product.name=:productName "
 			+ "and c.contentId=:contentId and c.companyId=:companyId and status.statusId=:status")
-	ContentManagement findByProductAndContentIdAndCompanyId(@Param("productName") String productName,
+	List<ContentManagement> findByProductAndContentIdAndCompanyId(@Param("productName") String productName,
 			@Param("contentId") String contentId,@Param("companyId") Integer companyId,@Param("status") Integer status);
 }
