@@ -9,5 +9,4 @@ public class ContentManagementApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ContentManagementApplication.class, args);
 	}
-
 }

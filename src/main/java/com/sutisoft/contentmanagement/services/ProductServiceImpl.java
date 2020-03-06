@@ -9,6 +9,8 @@ import javax.transaction.Transactional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import com.sutisoft.contentmanagement.command.ProductCommand;
@@ -178,6 +180,13 @@ public class ProductServiceImpl implements ProductService {
                     + " --> Error is : " + e.getMessage(),e); 
 		}
 		return saveOrUpdatedProduct;
+	}
+
+	@Override
+	public List<Product> findByName(String productName) {
+		List<Product> productList=new ArrayList<Product>();
+		productList=productRepo.findByName(productName);
+		return productList;
 	}
 
 }

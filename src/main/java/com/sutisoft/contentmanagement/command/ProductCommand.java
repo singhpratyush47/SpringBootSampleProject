@@ -1,7 +1,12 @@
 package com.sutisoft.contentmanagement.command;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
 public class ProductCommand {
 
+	@NotEmpty(message = "Please provide a valid Name.")
 	private String productName;
 	private String oldProductName;
 	private Integer statusId;
